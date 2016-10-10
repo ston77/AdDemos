@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认通知"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:text="On The Hunt"
+            android:textColor="#99ffffff"
+            
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:background="#44ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" >
+    </View>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拨号键盘触摸音效"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+	 <View
+        android:background="#44ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" >
+    </View>
+
+	 <SeekBar
+	     android:progress="30"
+	     android:max="100"
+	     android:id="@+id/sb"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content" />
+    
+</LinearLayout>

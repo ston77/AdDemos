@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">02_android中的国际化</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">哈喽,欢迎静静</string>
+<!-- 针对不同的语言 和 国家提供 响应的  资源文件就可以了 
+	将对应的资源文件 放到 特定的文件夹下时, 那么 系统就会自动的根据当前的语言环境 去 加载 对应的资源文件
+	中的数据了 
+ -->
+    
+</resources>

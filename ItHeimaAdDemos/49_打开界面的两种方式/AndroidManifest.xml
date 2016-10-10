@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.open"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.itheima.open.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 显式意图注册 -->
+        <activity android:name="com.itheima.open.FirstActivity"></activity>
+        
+        <!-- 隐式意图注册 -->
+        <activity android:name="com.itheima.open.SecondActivity">
+            
+            <!-- 意图过滤 器-->
+            <intent-filter >
+                <!-- action和 category都必须写上 -->
+                <action android:name="com.itheima.open.action.OPEN"/>
+                
+                
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+        </activity>
+    </application>
+
+</manifest>

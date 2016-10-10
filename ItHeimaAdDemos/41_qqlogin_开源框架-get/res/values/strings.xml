@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">05_qqlogin_开源框架-post</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ip">http://188.188.4.100:8080/day06_android/login</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 要让两个 textView 水平 方向 居中显示 
+    	两种方式:
+    		1.通过  gravity , 当前 跟布局的下的 所有的孩子 控件相对于 当前的根 布局 都 居中显示.
+    			android:gravity="center_horizontal"
+    		2.通过 layout_gravity, 当前的控件 ,相对于 父控件显示的位置 
+    			android:layout_gravity="center_horizontal"
+    		
+    	出去面试 非常容易被问到的 .
+     -->
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+	<Button 
+	    android:gravity="right"
+	    android:text="点我啊"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    />
+</LinearLayout>

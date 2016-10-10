@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:onClick="create01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建普通对话框" />
+    <Button
+        android:onClick="create02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建单选对话框" />
+    <Button
+        android:onClick="create03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建多选对话框" />
+    <Button
+        android:onClick="create04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无实时进度的对话框" />
+    <Button
+        android:onClick="create05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有实时进度对话框" />
+
+</LinearLayout>

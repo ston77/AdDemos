@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.sdcard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.itheima.sdcard.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 2.装电池 -->
+        <receiver android:name="com.itheima.sdcard.SdcardReceiver">
+            <!-- 3.调频，实际上就是指定该广播接收者收到指定的广播，广播里面的动作与这个action不匹配的话，不会收到广播 -->
+            <intent-filter >
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
